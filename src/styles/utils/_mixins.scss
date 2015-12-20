@@ -1,0 +1,33 @@
+/* utils/_mixins.scss */
+
+@mixin clearfix {
+  &::after {
+    display: table;
+    content: '';
+    clear: both;
+  }
+}
+@mixin wrapper($width: 100%) {
+  max-width: unquote($width);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 $gutter;
+}
+
+// Media queries
+@mixin respond-to($breakpoint) {
+  // Retrieves the values from the key
+  $value: map-get($breakpoints, $breakpoint);
+
+  // if the key exists in the map-get
+  @if $value != null {
+    // Prints a media query based on the value
+    @media (min-width: $value) {
+      @content;
+    }
+  }
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Value `#{$breakpoint}` doesn't exist in `$breakpoints` map ."
+  }
+};

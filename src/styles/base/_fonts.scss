@@ -1,0 +1,52 @@
+/*
+@font-face {
+  font-family: $title;
+  src: url('../fonts/font.eot'); // IE9 Compat Modes
+  src: url('../fonts/font.eot?#iefix') format('embedded-opentype'), // IE6-IE8
+       url('webfont.woff2') format('woff2'), // Super Modern Browsers
+       url('../fonts/font.woff') format('woff'), // Modern Browsers
+       url('../fonts/font.ttf')  format('truetype'); // Safari, Android, iOS
+  font-style: normal;
+  font-weight: normal;
+}
+*/
+
+// Body Fonts
+@font-face {
+  font-family: $body;
+  src: url('../fonts/Oswald-Regular.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: $body__light;
+  src: url('../fonts/Oswald-Light.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: $body__bold;
+  src: url('../fonts/Oswald-Bold.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Title Fonts
+@font-face {
+  font-family: $title;
+  src: url('../fonts/Lato-Regular.ttf') format('opentype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: $title__light;
+  src: url('../fonts/Lato-Light.ttf') format('opentype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: $title__bold;
+  src: url('../fonts/Lato-Bold.ttf') format('opentype');
+  font-style: normal;
+  font-weight: normal;
+}

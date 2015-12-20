@@ -1,0 +1,20 @@
+/* layout/_grid.scss */
+
+@mixin grid-row {
+  @include clearfix;
+  margin: 0 (-1 * ($gutter/2));
+
+}
+
+%grid-col-common {
+  margin-bottom: $gutter;
+  padding-right: $gutter;
+  float: left;
+}
+
+@mixin grid-col ( $col_num ) {
+  width: (100/$col_num) * 1%;
+  @if $col_num == 1  {
+    float: none;
+  }
+}

@@ -1,0 +1,3 @@
+var UTIL = (function() {
+  return {};
+})();

@@ -1,0 +1,9 @@
+/* layout/_layout.scss */
+
+main {
+  margin: 10em 0;
+}
+.wrapper,
+footer {
+  @include wrapper;
+}
