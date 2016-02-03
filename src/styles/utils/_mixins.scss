@@ -7,7 +7,7 @@
     clear: both;
   }
 }
-@mixin wrapper($width: 100%) {
+@mixin wrapper($width: '100%') {
   max-width: unquote($width);
   width: 100%;
   margin: 0 auto;
@@ -31,3 +31,8 @@
     @warn "Value `#{$breakpoint}` doesn't exist in `$breakpoints` map ."
   }
 };
+
+@mixin font-size-leading($size, $leading) {
+  font-size: $size * 1em;
+  line-height: ($leading/$size) * 1em;
+}

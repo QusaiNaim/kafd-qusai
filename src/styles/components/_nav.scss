@@ -1,1 +1,23 @@
 /*  components/_navs.scss */
+
+
+.main-nav {
+  float: right;
+  width: 1044px;
+  margin-top: 70px;
+  font-family: $menu-item;
+  font-size: 2.2em;
+  color: #4A4A4A;
+  list-style-type: none;
+}
+
+.main-nav__item {
+  float: left;
+  padding-left: 116px;
+}
+
+
+.main-nav__link {
+  text-decoration: none;
+  color: #4A4A4A;
+}

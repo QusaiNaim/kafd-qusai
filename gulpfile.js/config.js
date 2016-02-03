@@ -24,9 +24,6 @@ module.exports = {
       autoprefixer: {
         browsers: ['last 2 versions']
       },
-      sass: {
-        indentedSyntax: true // Enable .sass syntax (.scss still works too)
-      },
       extensions: ['sass', 'scss', 'css']
     },
     scripts: {

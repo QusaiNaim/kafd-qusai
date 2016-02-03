@@ -7,13 +7,18 @@
   {% block head %}{% endblock %}
 </head>
 <body>
-  <header>
-    {% include "partials/nav.html" %}
-  </header>
+  <!-- Header  -->
+  {% include "partials/header.html" %}
+  <!-- /Header  -->
+
+  <!-- main content  -->
   {% block content %}{% endblock %}
-  <footer>
-    <p>Made with ♥ at <br><a href="http://syntaxdigital.com">Syntax</a></p>
-  </footer>
+  <!-- /main content  -->
+
+  <!-- Footer  -->
+  {% include "partials/footer.html" %}
+  <!-- /Footer  -->
+
   <!-- bower:js -->
   <script src="scripts/vendor/jquery.js"></script>
   <!-- endbower -->

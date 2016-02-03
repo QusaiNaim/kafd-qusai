@@ -1,1 +1,16 @@
 /* layout/_header.scss */
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 96%;
+  height: auto;;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.logo {
+  float: left;
+  width: 304px;
+  overflow: hidden;
+  height: 151px;
+}

@@ -3,7 +3,6 @@
 main {
   margin: 10em 0;
 }
-.wrapper,
-footer {
+.wrapper {
   @include wrapper;
 }

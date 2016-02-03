@@ -1,1 +1,178 @@
-/* pages/_home.scss */
+// Featured Content Component Styles
+// Video Component
+
+body {
+
+}
+
+main {
+  margin: 0;
+}
+.wrapper {
+  padding: 0;
+}
+
+.video-component-wrapper {
+  width: 100%;
+  height:auto;;
+  overflow: hidden;
+}
+
+.play-again {
+  width: 20%;
+  height: auto;
+  float: left;
+  background-color: #4F6C7E;
+  opacity: 0.5;
+  padding: 26px;
+}
+
+.play-again_content {
+  width: 70%;
+  margin: 0 auto;
+}
+.play-again img {
+  width: 41.6px;
+  float: left;
+  height: 46px;
+}
+
+.play-again p {
+  font-family: $body;
+  font-size: 3em;
+  color: #FFFFFF;
+  line-height: 1.5em;
+  margin-left: 55px;
+}
+
+.welcome-video {
+  width: 80%;
+  float: right;
+  height: auto;
+  background-color: #4F6C7E;
+}
+
+.welcome-video_title {
+  float: left;
+    padding: 31px;
+}
+
+.welcome-video_title h1{
+  font-size: 4em;
+  color: #FFFFFF;
+  line-height: 0.6em;
+}
+
+.welcome-video_body {
+  float: left;
+  width: 50%;
+  font-family: $body;
+  padding: 30px;
+  color: #FFFFFF;
+  font-size: 1.8em;
+  line-height: 0.9em;
+  margin-left: 20px;
+  margin-top: -10px;
+}
+
+// Featured Events Component Styles
+
+.featured-event-component {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.featured-event-largblock {
+  width: 70%;
+  float: left;
+  height: auto;
+  position: relative;
+
+}
+
+.featured-event-largblock img {
+  width: 100%;
+  height: auto;
+}
+
+.featured-event-largblock:after {
+  position: absolute;
+  content:"";
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  opacity: .2;
+  background-color: #8F1549;
+  z-index: 1;
+}
+
+.featured-event-largblock_content {
+  width: 48%;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+}
+
+.featured-event-largblock_content input {
+  background-color: #8D1549;
+  border: 0;
+  color: #FFFFFF;
+  font-family: $body;
+  font-size: 3em;
+}
+
+.featured-event-largblock_content h1 {
+  color: #FFFFFF;
+  font-size: 5em;
+  line-height: 70px;
+}
+
+.featured-event-largblock_content p {
+  color: #FFFFFF;
+  font-size: 2em;
+  font-family: $body;
+  line-height: 23px;
+
+}
+
+.featured-event-smallblock {
+  width: 30%;
+  float: right;
+  height: auto;
+  position: relative;
+}
+
+.featured-event-smallblock_1 {
+  width: 100%;
+  height: auto;
+  float: left;
+  clear: both;
+}
+
+.featured-event-smallblock_1 img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//dsdsdd
