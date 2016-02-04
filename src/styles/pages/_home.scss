@@ -74,6 +74,7 @@ main {
 }
 
 // Featured Events Component Styles
+
 .featured-event-container {
     width: 100%;
     height: auto;
@@ -87,26 +88,48 @@ main {
 
 }
 
-.featured-event-container p {
+.featured-event-left p {
     color: #FFFFFF;
     font-size: 20px;
     line-height: 23px;
-    font-family: RobotoSlab-Regular;
+    font-family: $body;
 }
 
-.featured-event-container h1 {
+.featured-event-right p {
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 23px;
+    font-family: $body;
+}
+
+.featured-event-left h1 {
   color: #FFFFFF;
   font-size: 50px;
-  font-family: RobotoSlab-Bold;
+  font-family: $title;
 
 }
 
-.featured-event-container input {
+.featured-event-right h1 {
+  color: #FFFFFF;
+  font-size: 50px;
+  font-family: $title;
+
+}
+
+.featured-event-left input {
     color: #FFFFFF;
     font-size: 30px;
-    font-family: RobotoSlab-Regular;
+    font-family: $body;
     border: 0;
 }
+
+.featured-event-right input {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-family: R$body;
+    border: 0;
+}
+
 
 .featured-event-right {
     width: 30%;
@@ -211,7 +234,7 @@ main {
   line-height: 53px;
 }
 
-.smallimage-2__content {
+.small-image-2__content {
     width: 82.7%;
     position: absolute;
     bottom: 13%;
@@ -220,12 +243,89 @@ main {
 }
 
 
-.smallimage-2__content input {
+.small-image-2__content input {
     background-color: #4F6C7E;
 }
 
-.smallimage-2__content h1 {
+.small-image-2__content h1 {
   line-height: 53px;
 }
 
-//dsdsdd
+
+@media only screen and (max-width:1366px) {
+    .featured-event-right input {font-size: 25px;}
+    .featured-event-right h1 {font-size: 25px;}
+    .featured-event-right p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .small-image-1__content h1 {line-height: 40px;}
+    .small-image-2__content h1  {line-height: 40px;}
+}
+
+@media only screen and (max-width:1280px) {
+    .featured-event-left input {font-size: 22px;}
+    .featured-event-right input {font-size: 22px;}
+    .bigimage__content h1 {line-height: 45px;}
+    .featured-event-left h1 {font-size: 25px;}
+    .featured-event-right h1 {font-size: 25px;}
+    .featured-event-left p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .featured-event-right p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .small-image-1__content h1 {line-height: 35px;}
+    .small-image-2__content h1  {line-height: 35px;}
+}
+
+@media only screen and (max-width:1024px) {
+    .featured-event-right input {font-size: 20px;}
+    .featured-event-right h1 {font-size: 20px;}
+    .featured-event-right p {
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .small-image-1__content h1 {line-height: 30px;}
+    .small-image-2__content h1  {line-height: 30px;}
+}
+
+@media only screen and (max-width:768px) {
+    .featured-event-left {
+        width: 100%;
+    }
+
+    .featured-event-right {
+        width: 100%;
+        float: left;
+        clear: both;
+    }
+
+    .featured-event-left input {font-size: 11.93px;}
+    .featured-event-right input {font-size: 11.93px;}
+    .featured-event-left h1 {font-size: 20px;}
+    .featured-event-right h1 {font-size: 20px;}
+
+    .bigimage__content h1 {line-height: 35px;}
+
+     .featured-event-left p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .featured-event-right p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .bigimage-inside {padding-top: 40%;}
+    .smallimage-inside {padding-top: 40%;}
+    .small-image-1__content {
+        left: 5%;
+        bottom: 7%;
+    }
+    .small-image-2__content {
+        left: 5%;
+        bottom: 7%;
+    }
+}
