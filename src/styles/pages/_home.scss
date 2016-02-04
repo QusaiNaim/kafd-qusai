@@ -74,115 +74,158 @@ main {
 }
 
 // Featured Events Component Styles
+.featured-event-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
 
-.featured-event-component {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-}
-.background_image{
-  height: auto;
-  position: relative;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  position: relative;
-}
-.featured-event-largblock {
-  width: 70%;
-  float: left;
-  background-image:url(../../images/event-bigblock.jpg);
-  overflow: hidden;
-  @extend .background_image;
-  box-sizing: border-box;
+.featured-event-left {
+    width: 70%;
+    float: left;
+    overflow: hidden;
 
 }
 
-
-
-.featured-event-largblock_content {
-  width: 60%;
-  float: left;
-  overflow: hidden;
-  padding: 35% 0 5% 5%;
-  box-sizing: border-box;
+.featured-event-container p {
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 23px;
+    font-family: RobotoSlab-Regular;
 }
-.input {
-  border: 0;
+
+.featured-event-container h1 {
   color: #FFFFFF;
-  font-family: $body;
-  font-size: 3em;
-}
-
-.featured-event-largblock_content input {
-  background-color: #8D1549;
-  @extend .input;
-}
-
-.featured-event-largblock_content h1 {
-  color: #FFFFFF;
-  font-size: 5em;
-  line-height: 70px;
+  font-size: 50px;
+  font-family: RobotoSlab-Bold;
 
 }
 
-.featured-event-largblock_content p {
-  color: #FFFFFF;
-  font-size: 2em;
-  font-family: $body;
-  line-height: 25px;
-
+.featured-event-container input {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-family: RobotoSlab-Regular;
+    border: 0;
 }
 
-
-.small-block {
-  width: 30%;
-  float: right;
-  overflow: hidden;
-  height: auto;
+.featured-event-right {
+    width: 30%;
+    float: right;
+    overflow: hidden;
 }
 
-.featured-event-smallblock-1 {
+.bigimage {
+    background-image: url(../images/event-bigblock.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.bigimage:after {
+  position: absolute;
+  content:"";
+  top:0;
   width: 100%;
-  background-image: url(../../images/../../images/event-smallblock-1.jpg);
-  @extend .background_image;
-  box-sizing: border-box;
-  padding: 14% 0% 2% 5%;
+  height: 100%;
+    z-index: 2;
+  left:0;
+  opacity: .2;
+  background-color: #8F1549;
 }
 
-.featured-event-smallblock-2 {
+.bigimage-inside {
+    padding-top: 53%;
+}
+
+.smallimage-1 {
+    background-image:url(../images/event-smallblock-1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.smallimage-1:after {
+  position: absolute;
+  content:"";
+  top:0;
   width: 100%;
-  background-image: url(../../images/../../images/event-smallblock-2.jpg);
-  @extend .background_image;
-  box-sizing: border-box;
-  padding: 14% 0% 2% 5%;
-}
-
-.featured-event-smallblock_content {
-  width: 82.6%;
-
-  box-sizing: border-box;
-}
-.featured-event-smallblock-1 input {
+  height: 100%;
+  z-index: 6;
+  left:0;
+  opacity: .4;
   background-color: #CBBDA2;
-  @extend .input;
 }
 
-.featured-event-smallblock-2 input {
+.smallimage-2 {
+    background-image:url(../images/event-smallblock-2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.smallimage-2:after {
+  position: absolute;
+  content:"";
+  top:0;
+  width: 100%;
+  height: 100%;
+  z-index: 6;
+  left:0;
+  opacity: .4;
   background-color: #4F6C7E;
-  @extend .input;
 }
 
-.featured-event-smallblock_content h1 {
-  color: #FFFFFF;
-  font-size: 5em;
+.smallimage-inside {
+    padding-top: 61.8%;
+}
+
+ .bigimage__content{
+     position: absolute;
+     width: 60%;
+     left: 5%;
+     bottom: 7%;
+     z-index: 3;
+}
+
+.bigimage__content input {
+    background-color: #8D1549;
+}
+
+.bigimage__content h1 {
+  line-height: 80px;
+}
+
+.small-image-1__content {
+    width: 82.7%;
+    position: absolute;
+    bottom: 13%;
+    left: 6%;
+    z-index: 8;
+}
+
+.small-image-1__content input {
+    background-color: #CBBDA2;
+}
+
+.small-image-1__content h1 {
   line-height: 53px;
 }
-.featured-event-smallblock_content p {
-  color: #FFFFFF;
-  font-size: 2em;
-  font-family: $body;
-  line-height: 23px;
+
+.smallimage-2__content {
+    width: 82.7%;
+    position: absolute;
+    bottom: 13%;
+    left: 6%;
+    z-index: 8;
 }
 
+
+.smallimage-2__content input {
+    background-color: #4F6C7E;
+}
+
+.smallimage-2__content h1 {
+  line-height: 53px;
+}
 
 //dsdsdd
