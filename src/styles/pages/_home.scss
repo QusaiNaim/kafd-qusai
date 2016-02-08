@@ -150,7 +150,7 @@ main {
 .featured-event-right input {
     color: #FFFFFF;
     font-size: 30px;
-    font-family: R$body;
+    font-family: $body;
     border: 0;
 }
 
@@ -296,12 +296,15 @@ main {
 
 @media only screen and (max-width:1024px) {
     .featured-event-right input {font-size: 20px;}
+
     .featured-event-right h1 {font-size: 20px;}
+
     .featured-event-right p {
         font-size: 10px;
         line-height: 20px;
     }
     .small-image-1__content h1 {line-height: 30px;}
+
     .small-image-2__content h1  {line-height: 30px;}
 }
 
@@ -344,12 +347,11 @@ main {
 }
 //Programs//
 
-.Programs-container {
+.programs-container {
   width: 92.239%;
   margin: 0 auto;
-  height: 120px;
+  padding-top: 78px;
   overflow: hidden;
-  padding-top: 60px;
 }
 
 .title {
@@ -358,4 +360,136 @@ main {
   font-size: 4em;
   line-height: 53px;
   float: left;
+}
+
+.programs-nav {
+  float: left;
+  clear: both;
+  list-style-type: none;
+  margin-left: -88px;
+  padding-top: 42px;
+  padding-bottom: 102px;
+}
+.programs-nav__item {
+  float: left;
+  font-size: 2.2em;
+  line-height: 29px;
+  padding-left: 88px;
+}
+.programs-nav__link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #9B9B9B;
+}
+
+.programs-nav__link:active {
+  font-family: $title;
+}
+
+
+.pagination-container {
+    float: right;
+    margin-right: -5px;
+}
+
+.arrow-box {
+    float: left;
+    width: 56px;
+    height: 56px;
+    background-color: #D8D8D8;
+    margin-right: 5px;
+    position: relative;
+    margin-top: 25px;
+}
+
+.arrow {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 10;
+  width: 50%;
+  height: 50%;
+}
+.leftarrow:after {
+    background: url(../images/left.png) no-repeat 100%;
+    @extend .arrow;
+}
+
+.rightarrow:after {
+    background: url(../images/right.png) no-repeat 100%;
+    @extend .arrow;
+}
+
+
+@media only screen and (max-width:1280px) {
+  .title {font-size: 3.4em}
+  .programs-nav {margin-left: -70px;}
+  .programs-nav__item {
+    font-size: 2em;
+    padding-left: 70px;
+  }
+  .arrow-box  {
+    width: 50px;
+    height: 50px;
+  }
+  .arrow {
+    width: 55%;
+    height: 55%;
+  }
+}
+//featured programs//
+
+.featured-programs-container {
+  margin-left: -74px;
+}
+
+.featured-program {
+  width: 50%;
+  float: left;
+  padding-left: 74px;
+}
+
+.featured-program__image {
+  width: 50%;
+  float: left;
+}
+.featured-program__image img {
+  width: 100%;
+  height: auto;
+}
+.featured-program__content {
+  width: 45%;
+  float: left;
+  padding-left: 52px;
+  padding-top: 65px;
+}
+
+.featured-program__content h2 {
+  font-family: $title;
+  font-size: 2.2em;
+  color: #4A4A4A;
+  line-height: 29px;
+}
+
+
+.featured-program__content p {
+  font-family: $body;
+  font-size: 1.9em;
+  color: #9B9B9B;
+  line-height: 17px;
+}
+
+.featured-program__content input {
+  width: 86px;
+  height: 39px;
+  padding: 0;
+  font-family: $body;
+  font-size: 2em;
+  color: #4A4A4A;
+  border: 0;
+  margin-top: 100px;
 }
