@@ -10,8 +10,8 @@
     list-style-type: none;
     float: right;
     margin-right: -35px;
-    margin-top: 50px;
-    font-family: Roboto-Regular;
+    margin-top: 60px;
+    font-family: $menu-item;
     font-size: 22px;
     color: #4A4A4A;
 }
@@ -20,13 +20,13 @@
     float: left;
     padding-right: 35px;
     padding-left: 35px;
-     position: relative;
+    position: relative;
 }
 
 .main-nav__link {
     display: block;
-  text-decoration: none;
-  color: #4A4A4A;
+    text-decoration: none;
+    color: #4A4A4A;
 }
 
 .sub-nav {
@@ -36,12 +36,12 @@
     bottom:0;
     left: 0;
     background-color: aqua;
-    z-index: 90;
+    z-index: 2;
     display: none;
 }
 
 .main-nav__item:hover {
-    background-color: red;
+    background-color: #F0F0F0;
 }
 
 .main-nav__item:hover .sub-nav{

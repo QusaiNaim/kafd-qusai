@@ -46,7 +46,7 @@ main {
     width: 80%;
     top: 30%;
     left: 10%;
-    z-index: 10;
+    z-index: 3;
 }
 
 .play_container img {
@@ -57,7 +57,7 @@ main {
 .play_container p {
     font-size: 30px;
     color: #FFFFFF;
-    font-family: RobotoSlab-Regular;
+    font-family: $body;
     float: left;
     vertical-align: middle;
     margin-left: 10px;
@@ -72,7 +72,7 @@ main {
 }
 
 .welcome-container h1 {
-    font-family: RobotoSlab-Bold;;
+    font-family: $title;
     font-size: 30px;
     color: #FFFFFF;
     float: left;
@@ -82,7 +82,7 @@ main {
 .welcome-container p {
     font-size: 18px;
     line-height: 19px;
-    font-family: RobotoSlab-Regular;
+    font-family: $body;
     color: #FFFFFF;
     margin-left: 30px;
     float: left;
@@ -161,21 +161,30 @@ main {
     overflow: hidden;
 }
 
-.bigimage {
-    background-image: url(../images/event-bigblock.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    position: relative;
+.backgound-image {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
-.bigimage:after {
+
+.image_overlay {
   position: absolute;
   content:"";
   top:0;
   width: 100%;
   height: 100%;
-    z-index: 2;
+  z-index: 4;
   left:0;
+}
+
+.bigimage {
+    background-image: url(../images/event-bigblock.jpg);
+    @extend .backgound-image;
+}
+
+.bigimage:after {
+  @extend .image_overlay;
   opacity: .2;
   background-color: #8F1549;
 }
@@ -186,40 +195,24 @@ main {
 
 .smallimage-1 {
     background-image:url(../images/event-smallblock-1.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    position: relative;
+    @extend .backgound-image;
 }
 
 .smallimage-1:after {
-  position: absolute;
-  content:"";
-  top:0;
-  width: 100%;
-  height: 100%;
-  z-index: 6;
-  left:0;
-  opacity: .4;
+  @extend .image_overlay;
   background-color: #CBBDA2;
+  opacity: .4;
 }
 
 .smallimage-2 {
     background-image:url(../images/event-smallblock-2.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    position: relative;
+    @extend .backgound-image;
 }
 
 .smallimage-2:after {
-  position: absolute;
-  content:"";
-  top:0;
-  width: 100%;
-  height: 100%;
-  z-index: 6;
-  left:0;
-  opacity: .4;
+  @extend .image_overlay;
   background-color: #4F6C7E;
+  opacity: .4;
 }
 
 .smallimage-inside {
@@ -231,7 +224,7 @@ main {
      width: 60%;
      left: 5%;
      bottom: 7%;
-     z-index: 3;
+     z-index: 6;
 }
 
 .bigimage__content input {
@@ -247,7 +240,7 @@ main {
     position: absolute;
     bottom: 13%;
     left: 6%;
-    z-index: 8;
+    z-index: 6;
 }
 
 .small-image-1__content input {
@@ -259,11 +252,7 @@ main {
 }
 
 .small-image-2__content {
-    width: 82.7%;
-    position: absolute;
-    bottom: 13%;
-    left: 6%;
-    z-index: 8;
+    @extend .small-image-1__content;
 }
 
 
@@ -352,4 +341,21 @@ main {
         left: 5%;
         bottom: 7%;
     }
+}
+//Programs//
+
+.Programs-container {
+  width: 92.239%;
+  margin: 0 auto;
+  height: 120px;
+  overflow: hidden;
+  padding-top: 60px;
+}
+
+.title {
+  font-family: $title;
+  color: #9B9B9B;
+  font-size: 4em;
+  line-height: 53px;
+  float: left;
 }
