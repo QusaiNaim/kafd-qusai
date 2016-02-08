@@ -10,67 +10,91 @@ main {
   padding: 0;
 }
 
-.video-component-wrapper {
-  width: 100%;
-  height:auto;;
-  overflow: hidden;
+.video-component-container {
+    width: 100%;
+    float: left;
+    height: auto;
+    overflow: hidden;
 }
 
-.play-again {
-  width: 20%;
-  height: auto;
-  float: left;
-  background-color: #4F6C7E;
-  opacity: 0.5;
-  padding: 26px;
+.video-component-container__left {
+    width: 20%;
+    float: left;
+    opacity: .5;
+    background-color: #4F6C7E;
+    overflow: hidden;
+    position: relative;
 }
 
-.play-again_content {
-  width: 70%;
-  margin: 0 auto;
-}
-.play-again img {
-  width: 41.6px;
-  float: left;
-  height: 46px;
+.video-component-container__right {
+    width: 80%;
+    float: right;
+    background-color: #4F6C7E;
+    overflow: hidden;
+    position: relative;
 }
 
-.play-again p {
-  font-family: $body;
-  font-size: 3em;
-  color: #FFFFFF;
-  line-height: 1.5em;
-  margin-left: 55px;
+.video-componet__Lheight {
+    padding-top: 35%;
+}
+.video-componet__Rheight {
+    padding-top:8.8%;
 }
 
-.welcome-video {
-  width: 80%;
-  float: right;
-  height: auto;
-  background-color: #4F6C7E;
+.play_container {
+    position: absolute;
+    width: 80%;
+    top: 30%;
+    left: 10%;
+    z-index: 10;
 }
 
-.welcome-video_title {
-  float: left;
-    padding: 31px;
+.play_container img {
+    width: 14%;
+    float: left;
+    margin-top: 2px;
+}
+.play_container p {
+    font-size: 30px;
+    color: #FFFFFF;
+    font-family: RobotoSlab-Regular;
+    float: left;
+    vertical-align: middle;
+    margin-left: 10px;
+    line-height: 39px;
 }
 
-.welcome-video_title h1{
-  font-size: 4em;
-  color: #FFFFFF;
-  line-height: 0.6em;
+.welcome-container {
+    width: 80%;
+    position: absolute;
+    top: 20%;
+    left: 3%;
 }
 
-.welcome-video_body {
-  float: left;
-  width: 50%;
-  font-family: $body;
-  padding: 30px;
-  color: #FFFFFF;
-  font-size: 1.8em;
-  line-height: 0.9em;
-  margin-left: 20px;
-  margin-top: -10px;
+.welcome-container h1 {
+    font-family: RobotoSlab-Bold;;
+    font-size: 30px;
+    color: #FFFFFF;
+    float: left;
+    line-height: 55px;
+}
+
+.welcome-container p {
+    font-size: 18px;
+    line-height: 19px;
+    font-family: RobotoSlab-Regular;
+    color: #FFFFFF;
+    margin-left: 30px;
+    float: left;
+    width: 57%;
+}
+
+
+
+@media screen and (max-width: 1353px) {
+    .welcome-container p {
+        width: 50%;
+    }
 }
 
 // Featured Events Component Styles

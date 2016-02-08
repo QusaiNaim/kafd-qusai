@@ -1,7 +1,18 @@
 {% macro active(activePage='home') %}
-  <nav>
-    <a href="#" class="{%if activePage == 'home' %} active {% endif %}">Home</a>
-    <a href="#" class="{%if activePage == 'about' %} active {% endif %}">About</a>
-    <a href="#" class="{%if activePage == 'contact' %} active {% endif %}">Contact</a>
-  </nav>
+<div class="main_nav_wrapper">
+              <nav class="main-nav">
+                  <li class="main-nav__item"><a class="main-nav__link" href="index.html">Home</a>
+                      <nav class="sub-nav">
+                          <li class="sub-nav__item">Menu</li>
+                          <li class="sub-nav__item">Menu</li>
+                          <li class="sub-nav__item">Menu</li>
+                      </nav>
+                  </li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#">News</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#">Events</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#">Media</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#">About</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#">Contact</a></li>
+              </nav>
+          </div>
 {% endmacro %}
