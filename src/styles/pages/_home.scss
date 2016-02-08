@@ -179,12 +179,14 @@ main {
 }
 
 .bigimage {
+   @extend .backgound-image;
+
     background-image: url(../images/event-bigblock.jpg);
-    @extend .backgound-image;
 }
 
 .bigimage:after {
   @extend .image_overlay;
+
   opacity: .2;
   background-color: #8F1549;
 }
@@ -194,23 +196,27 @@ main {
 }
 
 .smallimage-1 {
-    background-image:url(../images/event-smallblock-1.jpg);
-    @extend .backgound-image;
+  @extend .backgound-image;
+
+  background-image:url(../images/event-smallblock-1.jpg);
 }
 
 .smallimage-1:after {
   @extend .image_overlay;
+
   background-color: #CBBDA2;
   opacity: .4;
 }
 
 .smallimage-2 {
-    background-image:url(../images/event-smallblock-2.jpg);
-    @extend .backgound-image;
+  @extend .backgound-image;
+
+  background-image:url(../images/event-smallblock-2.jpg);
 }
 
 .smallimage-2:after {
   @extend .image_overlay;
+
   background-color: #4F6C7E;
   opacity: .4;
 }
@@ -415,13 +421,14 @@ main {
   height: 50%;
 }
 .leftarrow:after {
-    background: url(../images/left.png) no-repeat 100%;
-    @extend .arrow;
+  @extend .arrow;
+
+  background: url(../images/left.png) no-repeat 100%;
 }
 
 .rightarrow:after {
-    background: url(../images/right.png) no-repeat 100%;
-    @extend .arrow;
+  @extend .arrow;
+  background: url(../images/right.png) no-repeat 100%;
 }
 
 
@@ -444,13 +451,21 @@ main {
 //featured programs//
 
 .featured-programs-container {
-  margin-left: -74px;
+  width: 100%;
+  overflow: hidden;
+  height: auto;
+}
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
 }
 
 .featured-program {
-  width: 50%;
-  float: left;
-  padding-left: 74px;
+  width: 47.8825%;
+  border: 1px #979797 solid;
 }
 
 .featured-program__image {
