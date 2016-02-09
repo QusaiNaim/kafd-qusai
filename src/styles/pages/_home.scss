@@ -448,12 +448,52 @@ main {
     height: 55%;
   }
 }
+@media only screen and (max-width:1024px) {
+  .title {font-size: 3em}
+  .programs-nav {margin-left: -40px;}
+  .programs-nav__item {
+    font-size: 1.6em;
+    padding-left: 40px;
+  }
+  .arrow-box  {
+    width: 35px;
+    height: 35px;
+    margin-top: 37px;
+  }
+  .arrow {
+    width: 75%;
+    height: 75%;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .title {font-size: 1.8em}
+  .programs-nav {
+    margin-left: -40px;
+    padding-top: 14px;
+    padding-bottom: 40px;
+  }
+  .programs-nav__item {
+    font-size: 1.2em;
+    padding-left: 40px;
+  }
+  .arrow-box  {
+    width: 23px;
+    height: 23px;
+    margin-top: 14px;
+  }
+  .arrow {
+    width: 90%;
+    height: 90%;
+  }
+}
 //featured programs//
 
 .featured-programs-container {
   width: 100%;
   overflow: hidden;
   height: auto;
+  margin-bottom: 150px;
 }
 .left {
   float: left;
@@ -465,7 +505,10 @@ main {
 
 .featured-program {
   width: 47.8825%;
-  border: 1px #979797 solid;
+  border-top: 1px #979797 solid;
+  border-right: 1px #979797 solid;
+  border-bottom: 1px #979797 solid;
+  position: relative;
 }
 
 .featured-program__image {
@@ -473,14 +516,15 @@ main {
   float: left;
 }
 .featured-program__image img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 .featured-program__content {
-  width: 45%;
-  float: left;
-  padding-left: 52px;
-  padding-top: 65px;
+  width: 49%;
+   overflow: hidden;
+   float: left;
+   padding-left: 52px;
+   padding-top: 65px;
 }
 
 .featured-program__content h2 {
@@ -501,10 +545,40 @@ main {
 .featured-program__content input {
   width: 86px;
   height: 39px;
-  padding: 0;
   font-family: $body;
   font-size: 2em;
   color: #4A4A4A;
-  border: 0;
-  margin-top: 100px;
+  border: 1px solid #979797;
+  background-color: #FFFFFF;
+}
+
+@media only screen and (max-width:1620px) {
+  .featured-program__content h2 {font-size: 2.1em;}
+  .featured-program__content p {font-size: 1.4em;}
+  .featured-program__content input {
+    width: 80px;
+    height: 33px;
+    font-size: 1.6em;
+  }
+}
+
+@media only screen and (max-width:1024px) {
+  .featured-program__content {
+      padding-top: 20px;
+      padding-left: 20px;
+    }
+  .featured-program__content h2 {
+      font-size: 1.6em;
+      line-height: 22px;
+    }
+  .featured-program__content p {
+      font-size: 1.1em;
+      line-height: 16px;
+    }
+  .featured-program__content input {
+    width: 65px;
+    height: 28px;
+    font-size: 1.2em;
+    margin-top: 30px;
+  }
 }
