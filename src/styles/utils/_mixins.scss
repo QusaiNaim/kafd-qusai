@@ -36,3 +36,15 @@
   font-size: $size * 1em;
   line-height: ($leading/$size) * 1em;
 }
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin grayscale($grayscale) {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}

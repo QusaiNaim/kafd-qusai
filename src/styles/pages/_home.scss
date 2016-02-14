@@ -677,95 +677,88 @@ main {
 
 @media only screen and (max-width: 768px) {
 
-    .program__content h2 {
-        font-size: 1.2em;
-        line-height: 21px;
-    }
-    .program__content p {
-        font-size: 1em;
-        line-height: 14px;
-    }
-    .program__bgimg {
-        padding-top: 27.823691460055%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: top;
-    }
-
-    .program-content-container {
-        padding-top: 27.6%;
-    }
-    .program__content input {
-        width: 46px;
-        height: 19px;
-        margin-top: 20px;
-        font-size: 1.1em;
-        line-height: 14px;
-    }
+  .program__content h2 {
+    font-size: 1.2em;
+    line-height: 21px;
+  }
+  .program__content p {
+    font-size: 1em;
+    line-height: 14px;
+  }
+  .program__bgimg {
+    padding-top: 27.823691460055%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  .program-content-container {
+    padding-top: 27.6%;
+  }
+  .program__content input {
+    width: 46px;
+    height: 19px;
+    margin-top: 20px;
+    font-size: 1.1em;
+    line-height: 14px;
+  }
 }
 
 //success Storeies
 
 .sucess-stories-container {
-    width: 92.239%;
-    margin: 0 auto;
-    overflow: hidden;
-    margin-top: 74px;
+  @extend .programs-container;
 }
 
 .sucees-stories-wrapper {
-    width: 100%;
-    float: left;
-    margin-top: 114px;
+  width: 100%;
+  float: left;
+  margin-top: 114px;
 }
 
 .sucees-stories__img {
-    width: 19.875776397516%;
-    float: left;
+  width: 19.875776397516%;
+  float: left;
 }
 
 .sucees-stories__content {
-    width: 80%;
-    float: left;
-    padding-left: 110px;
-    padding-top: 76px;
+  width: 80%;
+  float: left;
+  padding-left: 110px;
+  padding-top: 76px;
 
 }
 .sucees-stories__content p {
-    font-family:  $body;
-    font-size: 36px;
-    color: #9B9B9B;
-    line-height: 33px;
+  font-family:  $body;
+  font-size: 36px;
+  color: #9B9B9B;
+  line-height: 33px;
 }
 
 .sucees-stories__content h1{
-    font-family: $title;
-    font-size: 36px;
-    color: #9B9B9B;
-    line-height: 33px;
-    margin-top: 46px;
+  font-family: $title;
+  font-size: 36px;
+  color: #9B9B9B;
+  line-height: 33px;
+  margin-top: 46px;
 }
 
 .circular-image {
-	width: 100%;
-    height: auto;
-	border-radius: 50%;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-    padding-top: 100%;
-	background-image: url(../images/person.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+  @extend .background-image;
+
+  @include border-radius(50%);
+  @include grayscale(100%);
+
+  background-image: url(../images/person.jpg);
+  width: 100%;
+  height: auto;
+  padding-top: 100%;
 }
 
 .quoet{
-    font-family: $body;
-    font-size: 36px;
-    color: #9B9B9B;
-    line-height: 33px;
+  font-family: $body;
+  font-size: 36px;
+  color: #9B9B9B;
+  line-height: 33px;
 }
 
 /*.quoet:before {
@@ -796,49 +789,46 @@ main {
 }*/
 
 
-
-
 @media only screen and (max-width:1366px) {
 
-    .sucees-stories__content {padding-top: 40px;}
+  .sucees-stories__content {padding-top: 40px;}
 }
 
 @media only screen and (max-width:1280px) {
 
-    .sucees-stories__content {padding-top: 40;}
-    .sucees-stories__content p {font-size: 30px;}
-    .sucees-stories__content h1 {font-size: 30px;}
+  .sucees-stories__content {padding-top: 40;}
+  .sucees-stories__content p {font-size: 30px;}
+  .sucees-stories__content h1 {font-size: 30px;}
 }
 
 
 @media only screen and (max-width:1280px) {
 
-    .sucees-stories__content {padding-top: 20;}
-    .sucees-stories__content p {
-        font-size: 20px;
-        line-height: 25px;
-    }
-    .sucees-stories__content h1 {
-        font-size: 20px;
-        margin-top: 30px;
-        line-height: 25px;
-    }
+  .sucees-stories__content {padding-top: 20;}
+  .sucees-stories__content p {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .sucees-stories__content h1 {
+    font-size: 20px;
+    margin-top: 30px;
+    line-height: 25px;
+  }
 }
 
 @media only screen and (max-width:768px) {
 
-    .sucees-stories__content {
-        padding-left: 69px;
-        padding-top: 0;
-    }
-    .sucees-stories__content p {
-        font-size: 14px;
-        line-height: 22px;
-    }
-    .sucees-stories__content h1 {
-        font-size: 14px;
-        margin-top: 20px;
-        line-height: 22px;
-    }
-
+  .sucees-stories__content {
+    padding-left: 69px;
+    padding-top: 0;
+  }
+  .sucees-stories__content p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .sucees-stories__content h1 {
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 22px;
+  }
 }
