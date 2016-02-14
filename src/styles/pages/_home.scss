@@ -380,6 +380,7 @@ main {
   font-size: 2.2em;
   line-height: 29px;
   padding-left: 88px;
+  font-family: $menu-item;
 }
 .programs-nav__link {
   text-decoration: none;
@@ -701,4 +702,143 @@ main {
         font-size: 1.1em;
         line-height: 14px;
     }
+}
+
+//success Storeies
+
+.sucess-stories-container {
+    width: 92.239%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 74px;
+}
+
+.sucees-stories-wrapper {
+    width: 100%;
+    float: left;
+    margin-top: 114px;
+}
+
+.sucees-stories__img {
+    width: 19.875776397516%;
+    float: left;
+}
+
+.sucees-stories__content {
+    width: 80%;
+    float: left;
+    padding-left: 110px;
+    padding-top: 76px;
+
+}
+.sucees-stories__content p {
+    font-family:  $body;
+    font-size: 36px;
+    color: #9B9B9B;
+    line-height: 33px;
+}
+
+.sucees-stories__content h1{
+    font-family: $title;
+    font-size: 36px;
+    color: #9B9B9B;
+    line-height: 33px;
+    margin-top: 46px;
+}
+
+.circular-image {
+	width: 100%;
+    height: auto;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+    padding-top: 100%;
+	background-image: url(../images/person.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.quoet{
+    font-family: $body;
+    font-size: 36px;
+    color: #9B9B9B;
+    line-height: 33px;
+}
+
+/*.quoet:before {
+  content: 's';
+  display: block;
+  background-image: url(q1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  font-size: 10em;
+  line-height: 0.1em;
+  vertical-align: -0.2em;
+  text-indent: -600px;
+}
+
+.quoet:after {
+  content: 's';
+  display: block;
+  background-image: url(q2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  font-size: 10em;
+  line-height: 0.1em;
+  vertical-align: -0.7em;
+  text-indent: -600px;
+
+}*/
+
+
+
+
+@media only screen and (max-width:1366px) {
+
+    .sucees-stories__content {padding-top: 40px;}
+}
+
+@media only screen and (max-width:1280px) {
+
+    .sucees-stories__content {padding-top: 40;}
+    .sucees-stories__content p {font-size: 30px;}
+    .sucees-stories__content h1 {font-size: 30px;}
+}
+
+
+@media only screen and (max-width:1280px) {
+
+    .sucees-stories__content {padding-top: 20;}
+    .sucees-stories__content p {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .sucees-stories__content h1 {
+        font-size: 20px;
+        margin-top: 30px;
+        line-height: 25px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    .sucees-stories__content {
+        padding-left: 69px;
+        padding-top: 0;
+    }
+    .sucees-stories__content p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .sucees-stories__content h1 {
+        font-size: 14px;
+        margin-top: 20px;
+        line-height: 22px;
+    }
+
 }
