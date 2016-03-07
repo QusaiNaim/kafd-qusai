@@ -16,121 +16,260 @@ main {
   background-position: center;
 }
 
-
-.video-component-container {
-    width: 100%;
-    float: left;
-    height: auto;
-    overflow: hidden;
+.video-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
-.video-component-container__left {
-    width: 20%;
-    float: left;
-    opacity: .5;
-    background-color: #4F6C7E;
-    overflow: hidden;
-    position: relative;
+.left-videoblock {
+  width: 21%;
+  float: left;
+  overflow: hidden;
+  background-color: #4F6C7E;
+  opacity: .5;
+  position: relative;
 }
 
-.video-component-container__right {
-    width: 80%;
+
+.right-videoblock {
+    width: 79%;
     float: right;
-    background-color: #4F6C7E;
     overflow: hidden;
+    background-color: #4F6C7E;
     position: relative;
 }
 
-.video-componet__Lheight {
-    padding-top: 35%;
-}
-.video-componet__Rheight {
-    padding-top:8.8%;
+.background-col {
+    padding-top: 6%;
 }
 
-.play_container {
-    position: absolute;
-    width: 80%;
-    top: 30%;
-    left: 10%;
-    z-index: 3;
+.left-content{
+     position: absolute;
+     left: 68px;
+     top: 34px;
+     z-index: 6;
 }
 
-.play_container img {
-    width: 14%;
-    float: left;
-    margin-top: 2px;
-}
-.play_container p {
-    font-size: 30px;
-    color: #FFFFFF;
-    font-family: $body;
-    float: left;
+.play-icon {
+   display: inline-block;
     vertical-align: middle;
-    margin-left: 10px;
+    height: 47px;
+    width: 42px;
+    background-image: url(../images/play-logo-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 10px;
+}
+
+.left-content p {
+    font-family: $body;
+    font-size: 3em;
+    color: #FFFFFF;
     line-height: 39px;
 }
 
-.welcome-container {
-    width: 80%;
-    position: absolute;
-    top: 20%;
-    left: 3%;
+.right-content {
+     position: absolute;
+     left: 77px;
+     top: 34px;
+     width: 90%;
+     z-index: 6;
 }
 
-.welcome-container h1 {
+.right-content_h1 {
+    float: left;
     font-family: $title;
-    font-size: 30px;
+    font-size: 4em;
     color: #FFFFFF;
-    float: left;
-    line-height: 55px;
+    line-height: 40px;
 }
 
-.welcome-container p {
-    font-size: 18px;
-    line-height: 19px;
+.right-content_p {
     font-family: $body;
+    font-size: 1.8em;
     color: #FFFFFF;
-    margin-left: 30px;
+    width: 50%;
+    line-height: 17px;
+    margin-left: 64px;
     float: left;
-    width: 57%;
 }
 
+@media only screen and (max-width:1366px) {
 
+    .background-col {padding-top: 8%;}
 
-@media screen and (max-width: 1353px) {
-    .welcome-container p {
-        width: 50%;
+    .left-content {
+        left: 41px;
+        top: 41px;
+    }
+    .play-icon {
+        height: 36px;
+        width: 32px
+    }
+
+    .left-content p {
+        font-size: 2.6em;
+        line-height: 34px;
+    }
+    .right-content {
+        left: 52px;
+    }
+    .right-content_h1 {
+        font-size: 3em;
+        line-height: 39px;
+        margin-top: 5px;
+    }
+    .right-content_p {
+        font-size: 1.6em;
+        line-height: 17px;
     }
 }
 
+@media only screen and (max-width:1280px) {
+      .left-content {
+        top: 35px;
+    }
+    .right-content {
+        top: 28px;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+
+    .left-content {
+        left: 20px;
+        top: 22px;
+    }
+    .play-icon {
+        height: 30px;
+        width: 28px
+    }
+
+    .left-content p {
+        font-size: 20px;
+    }
+    .right-content {
+        left: 20px;
+    }
+    .right-content_h1 {
+        font-size: 2.2em;
+        line-height: 18px;
+    }
+    .right-content_p {
+        font-size: 1.2em;
+        line-height: 14px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .background-col {padding-top: 10%;}
+    .left-content {
+        left: 15px;
+        top: 25px;
+    }
+    .play-icon {
+        height: 24px;
+        width: 21px
+    }
+
+    .left-content p {
+        font-size: 2em;
+        line-height: 26px;
+    }
+    .right-content {
+        left: 20px;
+        top: 0;
+    }
+    .right-content_h1 {
+        font-size: 2.2em;
+        line-height: 29px;
+        margin-top: 5px;
+    }
+    .right-content_p {
+        font-size: 1.2em;
+        line-height: 17px;
+        width: 100%;
+        clear: both;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width:640px) {
+    .left-content {
+        top: 20px;
+    }
+    .right-content_p {
+        display: none;
+    }
+    .right-content {
+        top: 15px;
+    }
+
+    .play-icon {
+        height: 22px;
+        width: 20px
+    }
+    .left-content p  {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+
+    .left-content p {
+        font-size: 9px;
+    }
+    .left-content {
+        top: 10px;
+    }
+
+    .right-content_p {
+        display: none;
+    }
+
+    .right-content_h1 {
+        font-size: 12px;
+        line-height: 16px;
+        margin-top: 0px;
+    }
+    .right-content {
+        top: 15px;
+    }
+
+    .play-icon {
+        height: 10.11px;
+        width: 8.69px
+    }
+
+}
 // Featured Events Component Styles
 
 .featured-event-container {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
 .featured-event-left {
-    width: 70%;
-    float: left;
-    overflow: hidden;
-
+  width: 70%;
+  float: left;
+  overflow: hidden;
 }
 
 .featured-event-left p {
-    color: #FFFFFF;
-    font-size: 20px;
-    line-height: 23px;
-    font-family: $body;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 23px;
+  font-family: $body;
 }
 
 .featured-event-right p {
-    color: #FFFFFF;
-    font-size: 20px;
-    line-height: 23px;
-    font-family: $body;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 23px;
+  font-family: $body;
 }
 
 .featured-event-left h1 {
@@ -148,24 +287,24 @@ main {
 }
 
 .featured-event-left input {
-    color: #FFFFFF;
-    font-size: 30px;
-    font-family: $body;
-    border: 0;
+  color: #FFFFFF;
+  font-size: 30px;
+  font-family: $body;
+  border: 0;
 }
 
 .featured-event-right input {
-    color: #FFFFFF;
-    font-size: 30px;
-    font-family: $body;
-    border: 0;
+  color: #FFFFFF;
+  font-size: 30px;
+  font-family: $body;
+  border: 0;
 }
 
 
 .featured-event-right {
-    width: 30%;
-    float: right;
-    overflow: hidden;
+  width: 30%;
+  float: right;
+  overflow: hidden;
 }
 
 
@@ -579,6 +718,11 @@ main {
     margin-top: 100px;
 }
 
+@media only screen and (max-width:1680px) {
+  .program__content input {
+    margin-top: 75px;
+  }
+}
 
 @media only screen and (max-width:1366px) {
 
